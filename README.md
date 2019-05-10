@@ -18,7 +18,7 @@
 ```json
 {
   "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTc1NzI2MDEsImlhdCI6MTU1NzQ4NjIwMSwiaXNzIjoid2V0aXgubXkiLCJuYmYiOjE1NTc0ODYyMDEsInN1YiI6IndldGl4fEVpSUtGRVJsZG1Wc2IzQmxja0Z3Y0d4cFkyRjBhVzl1R2dwUU1UaExka0pXWm5SQyJ9.wBa3kaNxvGt1sxzypzGOZXGlCxgxTaGLq6kLYo_ABY4",
-  "expiresIn": 86400 // expires time in seconds
+  "expiresIn": 86400 //expires time in seconds
 }
 ```
 
