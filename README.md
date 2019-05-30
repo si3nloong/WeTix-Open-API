@@ -177,3 +177,35 @@ sCL3oplt3X3Kcc5u2DHIQle7F3S8ZjxDFLITknrxA/TV
 ```
 05e296d320d456d816dbe83860c76ff8ee9c284f42b1cc95dac672bfaefed8c7969ba4d7fc7f4d867a9cb4c90ad0784ef65f6ba712b289b514c248d923907425bb488a9763e424a1bf97c0af8e8f90122e2e5eb4885ba1f9a87cf6a427cf869fa103292d5b5537dd8515b24ad3a73f6cd6f0a07ddb9ea1390912c096f93e384d
 ```
+
+#### 4. Payment Webhook
+
+`API URL` : https://rxa.com.my/webhook (This is your webhook url)<br/>
+`Method` : POST<br/>
+`Response Header`:
+
+```yml
+X-Signature: 05e296d320d456d816dbe83860c76ff8ee9c284f42b1cc95dac672bfaefed8c7969ba4d7fc7f4d867a9cb4c90ad0784ef65f6ba712b289b514c248d923907425bb488a9763e424a1bf97c0af8e8f90122e2e5eb4885ba1f9a87cf6a427cf869fa103292d5b5537dd8515b24ad3a73f6cd6f0a07ddb9ea1390912c096f93e384d # please refer to "How to generate signature?"
+X-Timestamp: 1557489064983 # unix timestamp
+X-Nonce: cSwY4AfCNLixNaDytlyF # random string, as least 20 characters
+```
+
+`Response Body`:
+
+```json
+{
+  "item": {
+    "id": "10000",
+    "transactionId": "30019053009418793020",
+    "title": "testing",
+    "wallet": "",
+    "currencyCode": "MYR",
+    "amountInCents": 1800,
+    "checkoutUrl": "https://local-open.wetix.my:8080/order/WP-BAwEBBmdvYktleQH_ggABBgEES2luZAEMAAEIU3RyaW5nSUQBDAABBUludElEAQQAAQZQYXJlbnQB_4IAAQVBcHBJRAEMAAEJTmFtZXNwYWNlAQwAAAAz_4IBC09ubGluZU9yZGVyAQUxMDAwMAIB",
+    "notifyUrl": "https://www.google.com",
+    "status": "STATUS",
+    "expiredAt": "2019-05-30T09:51:21Z",
+    "createdAt": "2019-05-30T09:41:21Z"
+  }
+}
+```
