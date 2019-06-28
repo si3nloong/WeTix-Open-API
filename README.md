@@ -209,3 +209,34 @@ X-Nonce: cSwY4AfCNLixNaDytlyF # random string, as least 32 characters
   }
 }
 ```
+
+#### 5. Exchange User ID
+
+`API URL` : https://sb-open.wetix.my/v1/user/exchange-id<br/>
+`Method` : POST<br/>
+`Request Header`:
+
+```yml
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTc1NzI2MDEsImlhdCI6MTU1NzQ4NjIwMSwiaXNzIjoid2V0aXgubXkiLCJuYmYiOjE1NTc0ODYyMDEsInN1YiI6IndldGl4fEVpSUtGRVJsZG1Wc2IzQmxja0Z3Y0d4cFkyRjBhVzl1R2dwUU1UaExka0pXWm5SQyJ9.wBa3kaNxvGt1sxzypzGOZXGlCxgxTaGLq6kLYo_ABY4 # token that generated in step 1
+X-Signature: 05e296d320d456d816dbe83860c76ff8ee9c284f42b1cc95dac672bfaefed8c7969ba4d7fc7f4d867a9cb4c90ad0784ef65f6ba712b289b514c248d923907425bb488a9763e424a1bf97c0af8e8f90122e2e5eb4885ba1f9a87cf6a427cf869fa103292d5b5537dd8515b24ad3a73f6cd6f0a07ddb9ea1390912c096f93e384d # please refer to "How to generate signature?"
+X-Timestamp: 1557489064983 # unix timestamp
+X-Nonce: cSwY4AfCNLixNaDytlyF # random string, as least 32 characters
+```
+
+`Request Body` :<br/>
+
+```jsonb
+{
+	"code": "6616b754995711e9ac8d6c96cfd87a51"
+}
+```
+
+`Response Body`:<br/>
+
+```jsonb
+{
+    "item": {
+        "key": "WP-BAwEBBmdvYktleQH_ggABBgEES2luZAEMAAEIU3RyaW5nSUQBDAABBUludElEAQQAAQZQYXJlbnQB_4IAAQVBcHBJRAEMAAEJTmFtZXNwYWNlAQwAAABf_4IBB1ROR1VzZXIBQGxTTmFsbEtuM3h2YytVTTR0SHVId3RiWXQyc2lEai9XQk0zendoRGVzUXZVL3pXTEtyaEtybGRWY1F1Y0tVV0ICAQhQbGF0Zm9ybQEDVE5HAAA"
+    }
+}
+```
