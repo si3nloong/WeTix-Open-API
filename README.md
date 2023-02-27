@@ -1,5 +1,9 @@
 ### WeTix RESTful OPEN API
 
+## This OPEN API is mainly used by: RXA and Gamification
+
+## For Gamification the specifications are NOT given below.
+
 #### 1. Request Access Token
 
 `API URL` : https://sb-open.wetix.my/v1/access-token<br/>
